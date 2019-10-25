@@ -19,6 +19,6 @@ export default {
   padding: 10px 10px;
   font-size: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 </style>

@@ -33,7 +33,7 @@ export default {
 .sidebar {
   float: right;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 0 15px 15px;
   width: 30%;
   @media (max-width: 992px) {
     display: none;

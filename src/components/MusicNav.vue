@@ -182,7 +182,9 @@ export default {
         }
       }
       .play-info {
+        padding: 15px 0;
         flex: 1;
+        box-sizing: border-box;
       }
     }
     .el-button {

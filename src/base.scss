@@ -1,1 +1,24 @@
 $header-height: 75px;
+
+.fade-color {
+  -webkit-line-clamp: 2;
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(30, 144, 255, 1),
+    rgba(255, 0, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.width-fit {
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 970px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}

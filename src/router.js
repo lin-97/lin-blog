@@ -26,10 +26,10 @@ const router = new VueRouter({
             import(/* webpackChunkName: "home" */ "./views/home.vue")
         },
         {
-          path: "/dynamic",
-          name: "dynamic",
+          path: "/wallpaper",
+          name: "wallpaper",
           component: () =>
-            import(/* webpackChunkName: "dynanic" */ "./views/dynamic.vue")
+            import(/* webpackChunkName: "wallpaper" */ "./views/wallpaper.vue")
         },
         {
           path: "/message",

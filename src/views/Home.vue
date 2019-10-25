@@ -77,6 +77,7 @@ export default {
     .article-t {
       cursor: pointer;
       .article-pic {
+        object-fit: cover;
         min-height: 250px;
         background-position: 50% 50%;
         background-size: cover;

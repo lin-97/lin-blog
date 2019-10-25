@@ -2,13 +2,17 @@
   <transition name="fade">
     <div class="header-wrapper" v-show="visible">
       <header class="header">
+        <!-- 博客logo -->
         <div class="logo">
           <div>
             <h2>凌雨微尘<sub>Blog</sub></h2>
           </div>
         </div>
+        <!-- 导航条 -->
         <Navbar></Navbar>
+        <!-- 搜索框 -->
         <Search></Search>
+        <!-- 登录注册 -->
         <User></User>
       </header>
     </div>
@@ -64,7 +68,7 @@ export default {
   }
   &.fade-enter,
   &.fade-leave-to {
-    transform: translateY(-75px);
+    transform: translateY(-$header-height);
     opacity: 0;
   }
   .header {
@@ -91,26 +95,9 @@ export default {
         flex: 0 0 auto;
       }
       h2 {
-        display: block;
-        font-size: 24px;
-        color: #666;
-        transition: all 0.3s;
-        background-image: -webkit-linear-gradient(
-          bottom,
-          rgba(30, 144, 255, 1),
-          rgba(255, 0, 255, 1)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @extend .fade-color;
         sub {
-          -webkit-line-clamp: 2;
-          background-image: -webkit-linear-gradient(
-            bottom,
-            rgba(30, 144, 255, 1),
-            rgba(255, 0, 255, 1)
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          @extend .fade-color;
         }
         sub {
           transition: all 0.3s;

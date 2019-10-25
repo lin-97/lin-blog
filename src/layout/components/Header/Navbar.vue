@@ -27,9 +27,9 @@ export default {
           path: "/home"
         },
         {
-          title: "动态",
+          title: "壁纸",
           icon: "el-icon-s-help",
-          path: "/dynamic"
+          path: "/wallpaper"
         },
         {
           title: "留言板",
